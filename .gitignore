@@ -1,0 +1,10 @@
+﻿.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.h5
+*.7z
+*.pkl
+*.joblib
+.env
