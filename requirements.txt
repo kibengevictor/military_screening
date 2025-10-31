@@ -1,9 +1,11 @@
 tensorflow-cpu==2.20.0
 flask==2.3.3
 numpy==2.1.0
-# Pin scikit-learn to the version used when scaler/label_encoder pickles were created
-# This avoids InconsistentVersionWarning when unpickling older sklearn objects.
-scikit-learn==1.2.2
+# Use a scikit-learn release that provides prebuilt wheels for newer Python
+# runtimes (3.11+ and 3.13). If you still want to pin to the exact version
+# used when the pickles were created, re-generate the pickles with this
+# scikit-learn version or adjust accordingly.
+scikit-learn==1.3.2
 joblib==1.4.2
 gunicorn==21.2.0
 Werkzeug==2.3.7
